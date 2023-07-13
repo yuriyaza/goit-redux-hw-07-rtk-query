@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/goit-redux-hw-07-rtk-query/static/css/main.ebfdf117.css",
+    "main.js": "/goit-redux-hw-07-rtk-query/static/js/main.4c267ca4.js",
+    "index.html": "/goit-redux-hw-07-rtk-query/index.html",
+    "main.ebfdf117.css.map": "/goit-redux-hw-07-rtk-query/static/css/main.ebfdf117.css.map",
+    "main.4c267ca4.js.map": "/goit-redux-hw-07-rtk-query/static/js/main.4c267ca4.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ebfdf117.css",
+    "static/js/main.4c267ca4.js"
+  ]
+}
