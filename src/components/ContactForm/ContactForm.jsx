@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { useFetchContactsQuery, useAddContactMutation } from 'redux/contactApi';
+import { useFetchContactsQuery, useAddContactMutation } from 'redux/phonebook/api';
 import { v4 as uuid } from 'uuid';
 import { Notify } from 'notiflix';
 

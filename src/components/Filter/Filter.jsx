@@ -1,14 +1,14 @@
 import { useSelector, useDispatch } from 'react-redux';
 
-import { contactSlice } from 'redux/contactSlice';
+import { phoneBook } from 'redux/phonebook/slice';
 import css from './Filter.module.css';
 
 export const Filter = () => {
-  const { filter } = useSelector(store => store.contactSlice);
+  const filter = useSelector(state => state.phoneBook.filter);
   const dispatch = useDispatch();
 
   const setFilter = filter => {
-    dispatch(contactSlice.actions.setFilter(filter));
+    dispatch(phoneBook.actions.setFilter(filter));
   };
 
   return (

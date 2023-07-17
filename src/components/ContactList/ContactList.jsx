@@ -1,5 +1,5 @@
 import { useSelector } from 'react-redux';
-import { useFetchContactsQuery, useDeleteContactMutation } from 'redux/contactApi';
+import { useFetchContactsQuery, useDeleteContactMutation } from 'redux/phonebook/api';
 import { FaUserCircle } from 'react-icons/fa';
 import { BsTrash } from 'react-icons/bs';
 import { Notify } from 'notiflix';
@@ -14,7 +14,7 @@ export const ContactList = () => {
   const { data = [], error: fetchError, isLoading: isFetchLoading, isError: isFetchError } = useFetchContactsQuery();
   const [deleteContact, { error: deleteError, isLoading: isDeleteLoading, isError: isDeleteError }] = useDeleteContactMutation();
 
-  const { filter } = useSelector(store => store.contactSlice);
+  const filter = useSelector(state => state.phoneBook.filter);
   const filteredContacts = data.filter(contact => contact.name.toLowerCase().includes(filter.toLowerCase()));
 
   if (isFetchError || isDeleteError) {
